@@ -1,9 +1,10 @@
 #!/bin/bash
+# This source script was written by my friend, FTK
 #Configuration
 BASE_DIR="../"
-INPUT_FILE_INFIX="data_top1"
+INPUT_FILE_INFIX="data_file"
 INPUT_FILE_ARR=( $(ls -1 ${BASE_DIR}${INPUT_FILE_INFIX}*) )
-OUTPUT_FILE="outtest1.csv"
+OUTPUT_FILE="merged_data.csv"
 
 #convert
 for FILE in ${INPUT_FILE_ARR[*]}; do
